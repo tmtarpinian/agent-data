@@ -7,7 +7,7 @@
       <h1> {{agent.name}} </h1>
      
       <h3 id="price"> NPM: {{agent.NPM}} </h3>
-      <p> Agent Status: {{agent.status}} </p>
+      <p> Price: {{agent.price}} </p>
       <button id="add-to-cart"> Add to Card </button>
       <h4>  Details </h4>
       <p> {{agent.address}}</p>

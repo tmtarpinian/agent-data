@@ -1,11 +1,39 @@
 <template>
-    <h1>This is the shopping cart </h1>
+    <div id="page-wrap">
+        <h1> Shopping Cart </h1>
+        <div 
+            v-for="agent in cartItems"
+            v-bind:key="agent.id"
+            class="product-container"
+        >
+            <img class="product-image" :src="agent.picture" />
+            <div class="details-wrap">
+                <h3> {{agent.name}} </h3>
+                <p> ${{agent.price}} </p>
+            </div>
+            <button class="remove-button"> Remove Item </button>
+        </div>
+    </div>
 </template>
 
 
 <script>
+import {cartItems} from '../seed-data'
 export default {
     name: 'ShoppingCart',
+    data() {
+        return{
+            cartItems,
+        }
+    },
+    computed: {
+        totalPrice() {
+            return this.cartItems.reduce(
+                (sum, item) => sum + Number(item.price),
+                0,
+            );
+        }
+    }
 }
 </script>
 
