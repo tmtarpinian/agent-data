@@ -33,13 +33,13 @@ const routes = [
   {
     path: '/product/:id',
     name: 'Product',
-    component: ShoppingCart
+    component: ProductsShow
   },
 
   {
     path: '/cart',
     name: 'Shopping Cart',
-    component: ProductsShow
+    component: ShoppingCart
   },
 ]
 

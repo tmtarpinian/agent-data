@@ -10,7 +10,7 @@ export default {
 </script>
 
 <style scoped>
-    hi {
+    h1 {
         color: red;
     }
 </style>
