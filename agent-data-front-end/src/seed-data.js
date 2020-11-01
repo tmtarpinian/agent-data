@@ -3,9 +3,9 @@ import agentImage2 from './assets/agentImage2.jpg';
 import agentImage3 from './assets/agentImage3.jpg';
 import agentImage4 from './assets/agentImage4.jpg';
 
-export const agents = [
+export const agentSeeds = [
     {
-        id: 0878976,
+        id: 878976,
         NPM: 18907104,
         name: 'ABBASI, MADEEHA RAJA',
         address: 'CANTON, MI 48188',
@@ -14,7 +14,7 @@ export const agents = [
         status: 'Inactive'
     },
     {
-        id: 0418720,
+        id: 418720,
         NPM: 9073559,
         name: 'Adams, Jeffrey Robert',
         address: 'LIVONIA, MI 48150-3023',
@@ -23,7 +23,7 @@ export const agents = [
         status: 'Active'
     },  
     {
-        id: 0033501,
+        id: 33501,
         NPM: 974216,
         name: 'ZYLSTRA, RENEE K',
         address: 'Grand Rapids, MI 49505-5713',
@@ -32,7 +32,7 @@ export const agents = [
         status: 'Inactive'
     },
     {
-        id: 0061131,
+        id: 61131,
         NPM: 362794,
         name: 'ZYLSTRA, TIMOTHY L',
         address: 'Grand Rapids, MI 49544-9715',
@@ -42,8 +42,9 @@ export const agents = [
     }
 ]
 
-eport const cartItems = [
-    products[0],
-    products[1],
-    products[2],
+export const cartItems = [
+    agentSeeds[0],
+    agentSeeds[1],
+    agentSeeds[2],
+    agentSeeds[3],
 ]

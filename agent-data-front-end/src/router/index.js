@@ -3,8 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import ShoppingCart from '../views/Cart.vue'
-import ProductsIndex from '../views/products/Index.vue'
-import ProductsShow from '../views/products/Show.vue'
+import AgentsIndex from '../views/agents/Index.vue'
+import AgentsShow from '../views/agents/Show.vue'
 
 Vue.use(VueRouter)
 
@@ -25,15 +25,15 @@ const routes = [
   },
 
   {
-    path: '/products',
-    name: 'Products',
-    component: ProductsIndex
+    path: '/agents',
+    name: 'Agents',
+    component: AgentsIndex
   },
 
   {
-    path: '/product/:id',
-    name: 'Product',
-    component: ProductsShow
+    path: '/agents/:id',
+    name: 'Agent',
+    component: AgentsShow
   },
 
   {

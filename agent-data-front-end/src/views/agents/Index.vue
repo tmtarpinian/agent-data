@@ -1,11 +1,28 @@
 <template>
-    <h1>This is the products page </h1>
+   <div id="page-wrap">
+     <div class="grid-wrap">
+        <div
+          v-for="agent in agentSeeds"
+          class="agent"
+          v-bind:key="agent.id"
+        >
+        <img v-bind:src="agent.picture" />
+        <h3 class="agent-name">{{ agent.name }} </h3>
+      </div>
+     </div>
+   </div>
 </template>
 
 
 <script>
+import {agentSeeds} from '../../seed-data'
 export default {
-    name: 'ProductsIndex',
+    name: 'AgentsIndex',
+    data() {
+      return {
+        agentSeeds
+      }
+    }
 }
 </script>
 
@@ -17,7 +34,7 @@ export default {
     margin-top: 16px;
   }
 
-  .product-item {
+  .agent {
     align-items: center;
     border-radius: 8px;
     box-shadow: 0px 2px 5px #888;
@@ -29,7 +46,7 @@ export default {
     width: 32%;
   }
 
-  .product-name {
+  .agent-name {
     margin-bottom: 0;
   }
 
