@@ -41,3 +41,9 @@ export const agents = [
         status: 'Active'
     }
 ]
+
+eport const cartItems = [
+    products[0],
+    products[1],
+    products[2],
+]
