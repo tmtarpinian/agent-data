@@ -1,16 +1,16 @@
 <template>
-    <h1>This is the Product show page </h1>
+    <h1>This is the shopping cart </h1>
 </template>
 
 
 <script>
 export default {
-    name: 'ProductsShow',
+    name: 'ShoppingCart',
 }
 </script>
 
 <style scoped>
     hi {
-        color: blue;
+        color: green;
     }
 </style>
