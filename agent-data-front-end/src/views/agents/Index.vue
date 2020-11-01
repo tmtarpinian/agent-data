@@ -8,6 +8,10 @@
         >
         <img v-bind:src="agent.picture" />
         <h3 class="agent-name">{{ agent.name }} </h3>
+        <p class="product-price"> {{ agent.status}}</p>
+        <router-link v-bind:to="'/agents/' + agent.id">
+        <button>View Details</button>
+        </router-link>
       </div>
      </div>
    </div>

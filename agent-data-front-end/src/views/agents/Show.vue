@@ -1,11 +1,32 @@
 <template>
-    <h1>This is the Product show page </h1>
+  <div id="page-wrap">
+    <div id="img-wrap">
+      <img v-bind:src="agent.picture" />
+    </div>
+    <div id="product-details">
+      <h1> {{agent.name}} </h1>
+     
+      <h3 id="price"> NPM: {{agent.NPM}} </h3>
+      <p> Agent Status: {{agent.status}} </p>
+      <button id="add-to-cart"> Add to Card </button>
+      <h4>  Details </h4>
+      <p> {{agent.address}}</p>
+      <p> {{agent.phone}} </p>
+    </div>
+  </div>
 </template>
 
 
 <script>
+import {agentSeeds} from '../../seed-data'
+
 export default {
     name: 'AgentsShow',
+    data() {
+      return {
+        agent: agentSeeds.find((a) => a.id == this.$route.params.id)
+      }
+    }
 }
 </script>
 

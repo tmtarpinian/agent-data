@@ -7,7 +7,7 @@ export const agentSeeds = [
     {
         id: 878976,
         NPM: 18907104,
-        name: 'ABBASI, MADEEHA RAJA',
+        name: 'ABBASI, MADEEHA',
         address: 'CANTON, MI 48188',
         phone: '734-458-7855',
         picture: agentImage1,
