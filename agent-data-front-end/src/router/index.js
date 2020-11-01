@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Cart from '../views/Cart.vue'
+import ShoppingCart from '../views/Cart.vue'
 import ProductsIndex from '../views/products/Index.vue'
 import ProductsShow from '../views/products/Show.vue'
 
@@ -17,10 +17,11 @@ const routes = [
   {
     path: '/about',
     name: 'About',
+    component: About
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    // omponent: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
 
   {
@@ -32,6 +33,12 @@ const routes = [
   {
     path: '/product/:id',
     name: 'Product',
+    component: ShoppingCart
+  },
+
+  {
+    path: '/cart',
+    name: 'Shopping Cart',
     component: ProductsShow
   },
 ]
