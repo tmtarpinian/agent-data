@@ -1,10 +1,16 @@
 <template>
-    
+    <div id="nav-bar">
+    <router-link to="/agents" id="products-link">
+    <h1>AGENTS</h1>
+    </router-link>
+    <router-link to="/cart" id="cart-link">
+    <button>Shopping Cart</button>
+    </router-link>
 </template>
 
 <script>
 export default {
-    
+    name: 'NavBar',
 }
 </script>
 
