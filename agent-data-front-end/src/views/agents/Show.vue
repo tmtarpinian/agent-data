@@ -1,5 +1,5 @@
 <template>
-  <div id="page-wrap">
+  <div id="page-wrap" v-if="agent">
     <div id="img-wrap">
       <img v-bind:src="agent.picture" />
     </div>
@@ -14,14 +14,19 @@
       <p> {{agent.phone}} </p>
     </div>
   </div>
+  <NotFoundPage v-else />
 </template>
 
 
 <script>
 import {agentSeeds} from '../../seed-data'
+import NotFoundPage from '../NotFoundPage'
 
 export default {
     name: 'AgentsShow',
+    components: {
+        NotFoundPage,
+    },
     data() {
       return {
         agent: agentSeeds.find((a) => a.id == this.$route.params.id)
