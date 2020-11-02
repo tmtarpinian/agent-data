@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import NotFoundPage from '../views/NotFoundPage.vue'
 import ShoppingCart from '../views/Cart.vue'
 import AgentsIndex from '../views/agents/Index.vue'
 import AgentsShow from '../views/agents/Show.vue'
@@ -40,6 +41,11 @@ const routes = [
     path: '/cart',
     name: 'Shopping Cart',
     component: ShoppingCart
+  },
+  {
+    path: '*',
+    name: 'NotFoundPage',
+    component: NotFoundPage
   },
 ]
 
