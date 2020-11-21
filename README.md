@@ -1,2 +1,2 @@
 # agent-data
-E-commerce site that allows purchase of insurance agent licensing information written with Vue, Node.js, MongoDB, and Express
+A Node.js app that scrapes insurance agent licensing info with Puppeteer to form an API with Express and MongoDB, and a UI with React.
